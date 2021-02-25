@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss'
+import ContainerMoeda from './component/ContainerMoeda'
+import Container from 'react-bootstrap/Container'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container className="new-container">
+        <h2 className="mt-5 mb-5 pl-2">Conversor de Moedas</h2>
+        <ContainerMoeda moedaA="USD" moedaB="BRL" />
+        <ContainerMoeda moedaA="EUR" moedaB="BRL" />
+        <ContainerMoeda moedaA="USD" moedaB="EUR" />
+        <ContainerMoeda moedaA="GBP" moedaB="BRL" />
+        <ContainerMoeda moedaA="ARS" moedaB="BRL" />
+        {/* <ContainerMoeda moedaA="CAD" moedaB="BRL" />
+        <ContainerMoeda moedaA="AUD" moedaB="BRL" />
+        <ContainerMoeda moedaA="JPY" moedaB="BRL" /> */}
+        {/* <ContainerMoeda moedaA="GBP" moedaB="EUR" />
+        <ContainerMoeda moedaA="USD" moedaB="GBP" /> */}
+      </Container>
+    </>
   );
 }
 
