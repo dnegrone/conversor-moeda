@@ -1,0 +1,10 @@
+.specialSelect, .specialInput {
+    border: none;
+    padding: 0.4rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.specialInput {
+    border-bottom: solid 1px #ccc;
+    max-width: 9rem;
+}
